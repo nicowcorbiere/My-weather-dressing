@@ -1,0 +1,65 @@
+#accueil_pannel {
+    width: 100%;
+}
+
+#logo_accueil {
+    background: url("../img/logo_accueil.png");
+    width: 204px;
+    height: 185px;
+    margin: 2% auto 1%;
+}
+
+.ligne {
+	position: relative;
+	height: 220px;
+    margin-bottom: 2%;
+}
+
+.vignette {
+    width: 197px;
+    height: 197px;
+	position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.legende {
+    color: black;
+	position: absolute;
+    bottom: -24px;
+    left: -15%;
+    width: 130%;
+    text-align: center;
+}
+
+.gauche {
+	left: 12%;
+}
+
+.droite {
+	right: 12%;
+}
+
+    #tenuedujour {
+        background: url("../img/tenue_du_jour.png");
+    }
+
+    #gerer {
+        background: url("../img/gerer.png");
+    }
+
+    #mon_compte {
+        background: url("../img/mon_compte.png");
+    }
+
+    #info {
+        background: url("../img/info.png");
+    }
+
+    #bon_plan {
+        background: url("../img/bon_plan.png");
+    }
+
+    #meteo_icon {
+        background: url("../img/meteo_icon.png");
+    }
