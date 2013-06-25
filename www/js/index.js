@@ -16,6 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+import com.parse.Parse;
+import com.parse.ParseAnalytics;
 var app = {
     // Application Constructor
     initialize: function() {
@@ -47,3 +49,7 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+public void onCreate() { 
+    Parse.initialize(this, "vXyhHPbWA3Nf8fxgsy0LnHgqwAV7nKuG6CnDIsb3", "uxvcnTqFpZpkvj0ju1eeAQJhRy3TnBSgntB3Ihyf"); 
+}
