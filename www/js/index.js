@@ -16,8 +16,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import com.parse.Parse;
-import com.parse.ParseAnalytics;
 var app = {
     // Application Constructor
     initialize: function() {
