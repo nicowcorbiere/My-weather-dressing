@@ -25,7 +25,9 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/connexion.css" />
         <title>My Weather Dressing</title>
-		
+		<script type="text/javascript" src="phonegap.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
     </head>
     <body>
 		
@@ -35,12 +37,25 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
-			<a href="home.html">Home</a>
+			<a href="HTML/home.html">Home</a>
+			
+			<!--formulaire de connexion-->
+			<form name="connexionForm" id="connexionForm" action="#"><!-- début du formulaire de connexion -->   
+				<span id="erreur"></span><!-- span qui contiendra les éventuels messages d'erreur -->
+			 
+				<label for="login">Nom d'utilisateur :</label>
+					<input type="text" name="login" id="login" /><!-- champ pour le login -->
+			 
+				<label for="pass">Mot de passe :</label>
+				<input type="password" name="pass" id="pass" /><!-- champ pour le mot de passe -->
+			 
+				<input type="submit" value="Je me connecte" class="bouton" /><!-- bouton de connexion -->
+			</form><!-- fin du formulaire -->
+			
 			<div id="logo_connexion"></div>
-			<script type="text/javascript" src="cordova.js"></script>
-			<script type="text/javascript" src="js/index.js"></script>
+			
 			<script type="text/javascript">
-				app.initialize();
+				app.initialize();				
 			</script>
     </body>
 </html>
