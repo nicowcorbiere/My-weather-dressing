@@ -62,11 +62,12 @@
 
     // Un bouton déclenchera l'appel de cette fonction
     //
-    function capturePhoto() {
-      // Prendre une photo avec l'appareil photo du mobile et récupérer l'image sous forme de flux encodé en Base64
-      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50 });
-    }
-
+	$(".capturePhoto").click(function() {
+		function capturePhoto() {
+		  // Prendre une photo avec l'appareil photo du mobile et récupérer l'image sous forme de flux encodé en Base64
+		  navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50 });
+		}
+	});
     // Un bouton déclenchera l'appel de cette fonction
     //
     function capturePhotoEdit() {
@@ -92,7 +93,7 @@
     </script>
   </head>
   <body>
-    <button onclick="capturePhoto();">Prendre une photo</button> <br>
+    <button class="capturePhoto">Prendre une photo</button> <br>
     <button onclick="capturePhotoEdit();">Prendre une photo et l'éditer</button> <br>
     <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">Depuis la gallerie de photos</button><br>
     <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">Depuis l'album photo</button><br>
